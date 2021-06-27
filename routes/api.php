@@ -23,9 +23,9 @@ Route::middleware('auth:api')->get('/user', function (Request $request) {
  * Listar Cadastros
  *
  * @method GET
- * @url ('/crud-test')
+ * @url ('/cadastros')
  */
-Route::get('crud-test', [CadastroController::class, 'index']);
+Route::get('cadastros', [CadastroController::class, 'index']);
 
 /**
  * Pegar um Cadastro
