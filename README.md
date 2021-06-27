@@ -4,9 +4,11 @@ by: Frederyco Miguel
 
 ``` Bash
     
-- composer install
+- create base mysql "laravel"
     
 - Copy ".env.example" to ".env"
+
+- composer install
     
 - php artisan migrate
 
@@ -15,6 +17,10 @@ by: Frederyco Miguel
 - npm install
     
 - npm run watch
+
+- php artisan serve
+
+- php artisan key:generate
 ```
 
 ## Endpoints
@@ -22,30 +28,30 @@ by: Frederyco Miguel
 <h4>Pegar todos Cadastros</h4>
 
 ``` Bash
-GET api/crud-test
+GET api/cadastros
 ```
 
 <h4>Pegar unico Cadastro</h4>
 
 ``` Bash
-GET api/crud-test/{id}
+GET api/cadastro/{id}
 ```
 
 <h4>Deletar Cadastro</h4>
 
 ``` Bash
-delete api/crud-test/{id}
+delete api/cadastro/{id}
 ```
 
 <h4>Adicionar Cadastro</h4>
 
 ``` Bash
-POST api/crud-test
+POST api/cadastro
 ```
 
 <h4>Atualizar Cadastro</h4>
 
 ``` Bash
-PUT api/crud-test
+PUT api/cadastro
 ```
 
